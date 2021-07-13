@@ -1,3 +1,21 @@
+<? 
+include "funcao.php";
+
+if(strlen($_POST['nome']))
+{
+    if(sendMail($_POST['email'],'seuemail@gmail.com', $_POST['mensagem'], 'Formulário de contato'))
+    {
+        echo "Sua mensagem foi enviada com sucesso!";
+    }
+    else
+    {
+        echo "Ocorreu um erro ao enviar";
+    }
+    echo "<br><a href='index.html'>Voltar</a>";
+    exit();
+}
+?>
+
 <!doctype html>
 <html lang="pt-BR">
 
@@ -135,7 +153,7 @@
                     <h2>Infoproduto</h2>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat repellendus pariatur, recusandae ratione tenetur dignissimos magni ullam? Suscipit fuga rerum ea minus earum similique perspiciatis tempore recusandae qui officia?
                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel exercitationem eveniet vero maxime ratione </p>
-                    <a href="#" class="btn btn-primary">Read more</a>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
             <div class="perspective-phone">
@@ -383,10 +401,47 @@
     </div>
 
     <div class="section5" id="comochegar">
-        <div class="container5">
 
     <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="660" id="gmap_canvas" src="https://maps.google.com/maps?q=Alameda%20da%20Inova%C3%A7%C3%A3o%20297&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><a href="https://www.embedgooglemap.net"></a></div></div>
     <!-- // end .section -->
+
+
+
+<div class="forms">
+
+    <div class="wrapper">
+        <header>Send us a Message</header>
+        <form action="#">
+          <div class="dbl-field">
+            <div class="field">
+              <input type="text" name="Nome" placeholder="Nome Completo">
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="Email" placeholder="E-Mail">
+              <i class='fas fa-envelope'></i>
+            </div>
+          </div>
+          <div class="dbl-field">
+            <div class="field">
+              <input type="text" name="Número" placeholder="Número de Contato">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="Assunto" placeholder="Assunto">
+              <i class='fas fa-globe'></i>
+            </div>
+          </div>
+          <div class="message">
+            <textarea placeholder="Write your message" name="message"></textarea>
+            <i class="material-icons"></i>
+          </div>
+          <div class="button-area">
+            <button type="submit">Enviar Mensagem</button>
+            <span></span>
+          </div>
+        </form>
+      </div>
 
 </div>
 
@@ -425,15 +480,9 @@
 
     </div>
 
+
+
    
-
-
-
-            </div>
-
-        </div>
-
-    </div>
     
     <!-- jQuery and Bootstrap -->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -442,6 +491,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+
 
     <script>
 
@@ -564,6 +614,35 @@ jQuery(function ($) {
 	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
 	$this.countTo(options);
   }
+
+  const form = document.querySelector("form"),
+statusTxt = form.querySelector(".button-area span");
+form.onsubmit = (e)=>{
+  e.preventDefault();
+  statusTxt.style.color = "#0D6EFD";
+  statusTxt.style.display = "block";
+  statusTxt.innerText = "Sending your message...";
+  form.classList.add("disabled");
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "message.php", true);
+  xhr.onload = ()=>{
+    if(xhr.readyState == 4 && xhr.status == 200){
+      let response = xhr.response;
+      if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
+        statusTxt.style.color = "red";
+      }else{
+        form.reset();
+        setTimeout(()=>{
+          statusTxt.style.display = "none";
+        }, 3000);
+      }
+      statusTxt.innerText = response;
+      form.classList.remove("disabled");
+    }
+  }
+  let formData = new FormData(form);
+  xhr.send(formData);
+}
 });
 
 
