@@ -149,9 +149,6 @@
     border-color: rgba(255,255,255,0) #5cb85c rgba(255,255,255,0) rgba(255,255,255,0);
 }
 
-.sc-button-checkout-default {
-}
-
 .sc-button-checkout-paypal {
     border: 0;
     cursor: pointer;
