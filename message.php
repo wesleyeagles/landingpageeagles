@@ -1,8 +1,8 @@
 <?php
-  $name = htmlspecialchars($_POST['Nome']);
-  $email = htmlspecialchars($_POST['Email']);
-  $phone = htmlspecialchars($_POST['Número']);
-  $website = htmlspecialchars($_POST['Assunto']);
+  $Nome = htmlspecialchars($_POST['Nome']);
+  $Email = htmlspecialchars($_POST['Email']);
+  $Número = htmlspecialchars($_POST['Número']);
+  $Assunto = htmlspecialchars($_POST['Assunto']);
   $message = htmlspecialchars($_POST['message']);
   if(!empty($email) && !empty($message)){
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
