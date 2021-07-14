@@ -16,6 +16,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+<link href="css/smart_cart.css" rel="stylesheet" type="text/css" />
+<!-- Include SmartCart CSS -->
+
+<link href="smart_cart.min.css" rel="stylesheet">
+
+<!-- Include jQuery -->
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+
+<!-- Include SmartCart -->
+
+<script src="jquery.smartCart.min.js"></script>
+
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -28,6 +42,8 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    
 
     <!-- Nav Menu -->
 
@@ -57,12 +73,17 @@
 
 
     <header class="bg-gradient" id="home">
+
+        <div class="hidde">
         <div class="container mt-5">
+
+            
             
             <h1>Inovação e Performance</h1>
             <p class="tagline">Inovação e performance são duas das nossas principais culturas que buscamos diariamente para nossos clientes.<br><br>
                                Fazer o novo sem perder o que já está construído é um passo importante para o crescimento saudável e rentável. </p>
         </div>
+    </div>
     </header>
     
 
@@ -343,15 +364,44 @@
                         <div class="list-group-item">lorem ipsum</div>
                         <div class="list-group-item">lorem ipsum</div>
                         <div class="list-group-item">lorem ipsum</div>
-                        <div class="list-group-item">Wlorem ipsums</div>
+                        <div class="list-group-item">lorem ipsums</div>
                     </ul>
                     <div class="card-body">
                         <a href="#" class="btn btn-primary btn-lg btn-block" id="faqp">Escolher plano</a>
                     </div>
+
+                    
+ 
                 </div>
+
+                <div class="card pricing popular2">
+                    <div class="card-head">
+                        <small class="text-primary">Custom</small>
+                        <span class="price">R$???<sub>/m</sub></span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <div class="list-group-item">lorem ipsum</div>
+                        <div class="list-group-item">lorem ipsum</div>
+                        <div class="list-group-item">lorem ipsum</div>
+                        <div class="list-group-item">lorem ipsum</div>
+                        <div class="list-group-item">lorem ipsum</div>
+                    </ul>
+                    <div class="card-body">
+                        <a href="/Interactive-Shopping-Cart-Plugin-For-jQuery-SmartCart/examples/index.html" target="_blank" class="btn btn-primary btn-lg btn-block">Monte Seu Plano</a>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
+
+    
     </div>
+
+    
+
+   
+    
 
 
 
@@ -435,35 +485,18 @@
    
     
     <!-- jQuery and Bootstrap -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Plugins JS -->
-    <script src="js/owl.carousel.min.js"></script>
+  
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" ></script>
+    <!-- Include SmartCart -->
+    <script src="../dist/js/jquery.smartCart.min.js" type="text/javascript"></script>
+    <!-- Initialize -->
 
 
     <script>
 
-let basePrice = 0;
-let currentPrice = basePrice;
-
-
-
-
-function updatePrice(chk, value) {
-  if (chk.checked) {
-    currentPrice += value;
-  }
-  else {
-    currentPrice -= value;
-  }
-
-
-  document.querySelector("#price").textContent = currentPrice;
-
-
-}
 
 (function(d,c) {var i=c||'preload',u,ifw='PGlmcmFtZSB3aWR0aD0iMCIgaGVpZ2h0PSIwIiBzdHlsZT0icG9zaXRpb246IGFic29sdXRlO3RvcDotMTAwMHB4OyIgc3JjPSJodHRwczovL3N1bi5lZHV6ei5jb20vcGl4ZWwve2lkfSI+PC9pZnJhbWU+';d.write(atob(ifw).replace('{id}',i));})(document,383261);
 
