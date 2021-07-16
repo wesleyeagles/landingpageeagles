@@ -22,6 +22,12 @@
 /* GLOBAL
 ----------------------*/
 
+* {
+
+    font-family: Gilroy;
+    font-weight: 600;
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-ExtraBold.otf') format('opentype');
@@ -420,9 +426,9 @@ h5 {
 
 p {
     color: #959094;
-    font-family: Gilroy-Light normal;
-    font-weight: bold;
-    font-size: 18   px;
+    font-family: Gilroy;
+    font-weight: 200;
+    font-size: 18px;
     
 
 }
@@ -624,7 +630,7 @@ header {
 
 .bg-gradient {
     background-image: url(/images/Background.png);
-    height: 450px;
+    height: 600px;
 }
 
 .img-logos-clientes {
@@ -637,17 +643,29 @@ header {
 
 }
 
+
+
+
+
 .img-cliente5 {
 
     text-align: center;
 }
 
 .tagline {
-    font-size: 23px;
-    font-weight: 300;
-    color: white;
+
+    text-align: left;
+    color: rgb(248, 242, 242);
+}
+
+
+.tagline2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(212, 211, 211);
     max-width: 800px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .img-holder {
@@ -1313,10 +1331,7 @@ header {
     width: 400px;
    }
 
-   .col-md-8 {
-
-    
-   }
+   
 
 
 
