@@ -390,6 +390,26 @@ a:focus {
     color: white;
 }
 
+.animation h1 {
+
+    position: relative;
+left: 50px;
+
+}
+
+.animation h3   {
+
+    position: relative;
+    right: 50px;
+}
+
+.animation p   {
+
+    position: relative;
+    right: 50px;
+}
+
+
 h1 {
     font-size: 60px;
     font-weight: 600;
@@ -411,7 +431,7 @@ h2 {
 
 h3 {
     color: white;
-    font-size: 33px;
+    font-size: 27px;
     font-weight: 600;
     font-family: Gilroy;
 
@@ -437,7 +457,7 @@ h5 {
 p {
     color: #959094;
     font-family: Gilroy;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 22px;
     
 
@@ -480,7 +500,7 @@ p.lead {
 .container p {
 
     font-family: Gilroy;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .container h4 {
@@ -512,6 +532,39 @@ p.lead {
 
     margin-bottom: 10px;
 }
+
+.form-group2 input {
+
+ 
+    position: relative;
+    display: flex;
+}
+
+    .form-group2 {
+
+        display: flex;
+        position: relative;
+        left: 80px;
+    }
+
+
+.button2 {
+
+    display: flex;
+
+
+}
+
+.button2 input {
+
+    margin-right: 20px;
+    margin-left: 16px;
+    width: 60px;
+    height: 32px;
+}
+
+
+
 
 
 
@@ -706,8 +759,8 @@ header {
 
 
 .tagline2 {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     color: rgb(212, 211, 211);
     max-width: 800px;
     margin: 0 auto;
