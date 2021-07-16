@@ -395,6 +395,8 @@ h1 {
     font-weight: 600;
     letter-spacing: -1px;
     margin-bottom: 1.5rem;
+    font-family: Gilroy;
+
 }
 
 h2 {
@@ -403,18 +405,24 @@ h2 {
     color: #075aa8;
     letter-spacing: -1px;
     margin-bottom: 1rem;
+    font-family: Gilroy;
+
 }
 
 h3 {
     color: white;
     font-size: 33px;
     font-weight: 600;
+    font-family: Gilroy;
+
 }
 
 h4 {
     font-size: 20px;
     font-weight: 600;
     color: #075aa8;
+    font-family: Gilroy;
+
 }
 
 h5 {
@@ -422,13 +430,15 @@ h5 {
     font-weight: 600;
     color: white;
     margin-bottom: 0.7rem;
+    font-family: Gilroy;
+
 }
 
 p {
     color: #959094;
     font-family: Gilroy;
-    font-weight: 200;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 22px;
     
 
 }
@@ -465,6 +475,42 @@ p.lead {
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+}
+
+.container p {
+
+    font-family: Gilroy;
+    font-weight: 600;
+}
+
+.container h4 {
+
+    font-size: 22px;
+}
+
+.container a {
+
+    font-family: Gilroy;
+    font-weight: 600;
+
+
+}
+
+.container small {
+
+    font-family: Gilroy;
+    font-weight: 600;
+}
+
+.row button {
+
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.caption {
+
+    margin-bottom: 10px;
 }
 
 
