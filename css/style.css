@@ -732,6 +732,18 @@ header {
     height: 600px;
 }
 
+.bg-gradient h1 {
+
+    text-align: center;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: 0;
+
+}
+
 .img-logos-clientes {
 
     float: center;
@@ -932,9 +944,7 @@ header {
 }
 
 @media (max-width:992px) {
-    .tab-content {
-        padding: 1.5rem;
-    }
+    
 }
 
 .tab-content p {
@@ -1329,9 +1339,54 @@ header {
     .bg-gradient {
         background-image: url(/images/Background.png);
         width: 100%;
-        height: 450px;
+        height: 600px;
         overflow-x: hidden;
 
+    }
+
+    .bg-gradient h1 {
+
+        text-align: center;
+        padding: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin-top: 0;
+
+
+    }
+
+    .bg-gradient h3 {
+
+        text-align: center;
+        padding: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin-top: 0;
+
+
+    }
+
+    .bg-gradient p {
+
+        text-align: center;
+        padding: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin-top: 0;
+
+
+    }
+
+    .hidde {
+
+        margin-top: 0;
+        height: 500px;
     }
 
     .container.mt-5 {
@@ -1428,7 +1483,44 @@ header {
    .col-md-4 img {
 
     width: 400px;
+    margin-top: 15px;
    }
+
+   .tab-content h2 {
+
+    font-size: 25px;
+    text-align: center;
+   }
+
+   .tab-content p {
+
+    font-size: 15px;
+   }
+
+   .lead {
+
+    text-align: center;
+   }
+
+    #imageplano {
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        left: 7px;
+        position: relative;        
+    }
+
+    #communication {
+
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+
+   
 
    
 
