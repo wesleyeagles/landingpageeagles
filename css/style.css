@@ -1336,6 +1336,12 @@ header {
 
 @media only screen and (max-width: 850px) {
 
+
+    body {
+
+        overflow-y: none;
+    }
+
     .bg-gradient {
         background-image: url(/images/Background.png);
         width: 100%;
@@ -1442,7 +1448,7 @@ header {
 
     #features {
 
-        height: 90px ;
+        height: 100px ;
     }
 
     .counter.col_fourth {
