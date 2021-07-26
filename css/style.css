@@ -1342,6 +1342,23 @@ header {
         overflow-y: none;
     }
 
+    #menu-top {
+
+        width: 100%;
+
+
+    }
+
+    .col-md-8 {
+
+        display: none;
+    }
+
+    .col-md-4 {
+
+        display: none;
+    }
+
     .bg-gradient {
         background-image: url(/images/Background.png);
         width: 100%;
@@ -1397,7 +1414,7 @@ header {
 
     .container.mt-5 {
 
-        width: 400px;
+        width: 100%;
 
     }
 
