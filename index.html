@@ -77,15 +77,20 @@
     <header class="bg-gradient" id="home">
 
         <div class="hidde">
-            <div class="info-book" id="infobook-id">
+            <div class="info-book" id="infobook-id" style="display:none;">
 
             
             
             <h1>Inovação e Performance</h1>
             <h3 class="tagline">Fazer o novo sem perder tempo</h3>
             <br>
-            <p class="tagline2">Inovação e performance são duas das nossas principais culturas que buscamos diariamente para nossos clientes.<br><br>
-                               Fazer o novo sem perder o que já está construído é um passo importante para o crescimento saudável e rentável. </p>
+            <br>
+            <h2>Confiança</h2>
+            <h4 class="tagline">Estratégias boas, trazem resultados reais.</h4>
+            <br>
+            <br>
+            <h1>Cultura e Pessoas</h1>
+            <h3 class="tagline">Valores que constroem sonhos.</h3>
         </div>
     </div>
     </header>
@@ -761,6 +766,16 @@
 
 
     <script>
+
+$( document ).ready(function() {
+     setTimeout(carregar, 1);
+});
+
+function carregar() {
+    $('#infobook-id').slideDown(2500, "linear");
+}
+
+
 $(window).scroll(function(){
     if ($(this).scrollTop() > 50) {
        $('#contasner-id').addClass('contasner-anime');
@@ -794,7 +809,6 @@ $(window).scroll(function(){
 		options = options || {};
 		
 		return $(this).each(function () {
-			// set options for current element
 			var settings = $.extend({}, $.fn.countTo.defaults, {
 				from:            $(this).data('from'),
 				to:              $(this).data('to'),
@@ -803,11 +817,9 @@ $(window).scroll(function(){
 				decimals:        $(this).data('decimals')
 			}, options);
 			
-			// how many times to update the value, and how much to increment the value on each update
 			var loops = Math.ceil(settings.speed / settings.refreshInterval),
 				increment = (settings.to - settings.from) / loops;
 			
-			// references & variables that will change with each update
 			var self = this,
 				$self = $(this),
 				loopCount = 0,
@@ -816,13 +828,11 @@ $(window).scroll(function(){
 			
 			$self.data('countTo', data);
 			
-			// if an existing interval can be found, clear it first
 			if (data.interval) {
 				clearInterval(data.interval);
 			}
 			data.interval = setInterval(updateTimer, settings.refreshInterval);
 			
-			// initialize the element with the starting value
 			render(value);
 			
 			function updateTimer() {
