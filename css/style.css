@@ -49,6 +49,32 @@ body {
 
 }
 
+.info-book {
+
+    opacity: 1;
+    transition: 5s;
+    
+}
+
+.info-book-anime {
+
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.info-book2 {
+
+    opacity: 0;
+    transform: translate3d(-1000px,0,0);
+    transition: 5s;
+}
+
+.info-book-anime2 {
+
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
 .caption {
 
     text-align: center;
@@ -729,7 +755,7 @@ header {
 
 .bg-gradient {
     background-image: url(/images/Background.png);
-    height: 600px;
+    height: 800px;
 }
 
 .bg-gradient h1 {
@@ -741,6 +767,36 @@ header {
     bottom: 0;
     right: 0;
     margin-top: 0;
+    font-size: 65px;
+    
+
+}
+
+.bg-gradient h3 {
+
+    text-align: left;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: 0;
+    font-size: 38px;
+    
+
+}
+
+.bg-gradient p {
+
+    text-align: left;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: 0;
+    font-size: 28px;
+    
 
 }
 
@@ -761,6 +817,16 @@ header {
 .img-cliente5 {
 
     text-align: center;
+    opacity: 0;
+    transform: translate3d(-1000px,0,0);
+    transition: 5s;
+}
+
+.img-cliente5-anime {
+
+    text-align: center;
+    opacity: 1;
+    transform: translate3d(0px,0,0);
 }
 
 .tagline {
@@ -787,6 +853,18 @@ header {
 
     text-align: center;
     margin-bottom: 0;
+    opacity: 0;
+    transform: translate3d(-0px,200px,0px);
+    transition: 3s;
+}
+
+.contasner-anime {
+
+    text-align: center;
+    margin-bottom: 0;
+    opacity: 1;
+    transform: translate3d(-0,0,0);
+
 }
 
 @media (max-width:1200px) {
@@ -1376,32 +1454,35 @@ header {
         bottom: 0;
         right: 0;
         margin-top: 0;
+        font-size: 35px;
 
 
     }
 
     .bg-gradient h3 {
 
-        text-align: center;
-        padding: 0;
+        text-align: left;
+        padding: 20px;
         left: 0;
         top: 0;
         bottom: 0;
         right: 0;
         margin-top: 0;
+        font-size: 20px;
 
 
     }
 
     .bg-gradient p {
 
-        text-align: center;
-        padding: 0;
+        text-align: left;
+        padding: 20px;
         left: 0;
         top: 0;
         bottom: 0;
         right: 0;
         margin-top: 0;
+        font-size: 18px;
 
 
     }
@@ -1465,12 +1546,12 @@ header {
 
     #features {
 
-        height: 100px ;
+        height: 140px ;
     }
 
     .counter.col_fourth {
 
-        padding: 10px 0px;
+        padding: 30px 0px;
         width: 85px;
     }
 
